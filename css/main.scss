@@ -1,0 +1,709 @@
+@import 'base';
+
+
+
+.navbar {
+  $height: 60px;
+  align-items: center;
+  background-color: #292929;
+  display: flex;
+  height: $height;
+  border-bottom: 3px solid hsl(0, 0%, 94%);
+  
+  &::before {
+    content: ' ';
+    // border-top: 1px solid $brand-color;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+
+  a {
+    border-bottom: 2px solid transparent;
+    color: #ffffff;
+    flex-grow: 1;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    flex-grow: 1;
+    height: 140%;
+    align-items: center;
+    display: flex;
+    padding-left: 1rem;
+  }
+  .nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+
+  .menu-item {
+    border-bottom: 2px solid transparent;
+    color: #ffffff;
+    flex-grow: 1;
+    letter-spacing: 0.5px;
+    line-height: $height; 
+    height: $height;
+    text-align: center;
+    text-transform: uppercase;
+    
+
+  &:hover {
+      background-color: hsla(0, 0%, 94%, 0.39);
+      cursor: pointer;
+      }
+
+      &.active {
+        border-color:rgba(255, 255, 255, 0.3882352941);
+      }
+    }
+  }
+  img {
+    height: calc(100% - 1.5rem);
+    width: auto;
+  }
+  
+}
+
+.banner {
+  width: 100%;
+  display: block;
+}
+
+.banner-image {
+  width: 100%;
+  display: block;
+  height:640px;
+}
+
+.banner-logo {
+  position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-146px; 
+    margin-left:-170px;  
+    cursor:pointer;
+    z-index: 3;
+}
+
+.banner-logo img {
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  top: -100px;
+}
+
+.heading-1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  top: -80px;
+}
+
+.heading-2 h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  top: 10px;
+}
+
+.container img {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.container-1 p {
+  padding-top: 2rem;
+}
+
+ .box {
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  height: 2500px;
+  width: calc(100% - 5rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -2200px;
+  position: sticky;
+  z-index: 3;
+}
+
+.container .item:nth-child(4),
+.container .item:nth-child(5),
+.container .item:nth-child(6),
+ {
+  display: none;
+}
+
+.container .item h3:nth-child(1),
+.container .item h3:nth-child(2),
+.container .item h3:nth-child(3) {
+  position: absolute;
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: 20rem;
+}
+
+h3:nth-child(4),
+h3:nth-child(5),
+h3:nth-child(6) {
+  position: absolute;
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: 20rem;
+  padding-left: 10rem;
+}
+
+
+
+body {
+  background-color: #292929;
+}
+
+.container,
+.container-1,
+.container-2,
+.container-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  grid-gap: 30px;
+  z-index: 5;
+}
+
+.item {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.container .item,
+.container-1 .item {
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-left: 4rem;
+  z-index: 5;
+}
+
+.container .item img:hover,
+.container-1 .item img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.button {
+  background-color: rgb(83, 173, 201);
+  top: 15px;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: center;
+  
+  z-index: 6;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  width: 50%;
+  float: left;
+  position: relative;
+  // top: 2450px;
+  width: 250px;
+  height: 200px;
+  padding-left: 1rem;
+  z-index: 5;
+}
+
+.left {
+  float: left;
+  padding: 0 20px 20px 0;
+  z-index: 5;
+  position: relative;
+  }
+
+  li {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: inline-block;
+  }
+
+  footer .box-1 nav a {
+    text-align-last: center;
+    padding-top: 1rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .footer-content {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 5%;
+    color: #ffffff;
+    position: absolute;
+    z-index: 5;
+  }
+  
+  .footerLogo img {
+    padding-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+  }
+  
+  footer .box-1 a {
+    text-decoration: none;
+    width: 0 auto;
+  }
+  
+  .box-1 nav ul li a {
+    display: block;
+    float: left;
+    padding: 10px;
+  }
+
+  // end of home page
+
+  // begining of conatct
+
+  label {
+    display: block;
+    padding: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*input buttons - CONTACT*/
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/*padding in the form - CONTACT*/
+
+form {
+    padding: 0 1rem;
+}
+
+/*spacing between the label - CONTACT*/
+fieldset {
+    margin-top: .5rem;
+    border: none;
+}
+
+input[type=submit] {
+ width:50%;
+ margin-left: 72px;
+}
+
+
+
+/*size of the map - CONTACT*/
+
+.map-wrapper {
+    padding-top: 1rem;
+    position: relative;
+
+}
+
+/*width of the map - CONTACT*/
+
+iframe {
+    width: 80%;
+    height: 100%;
+    margin-left: 2rem;
+
+}
+// off white bo - CONTACT
+
+.box-2 {
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  height: 700px;
+  width: calc(100% - 5rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -150px;
+  position: sticky;
+  z-index: 3;
+}
+
+// holds everything in - CONTACT
+.container-5 {
+  position: relative;
+  margin-top: -20rem;
+  z-index: 7;
+}
+
+.everything {
+  position: absolute;
+  top: 62rem;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.heading-3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  z-index: 5;
+  position: relative;
+  top: -70px;
+}
+
+// LINE-UP PAGE
+
+.box-3 {
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  height: 2600px;
+  width: calc(100% - 5rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -2550px;
+  position: sticky;
+  z-index: 3;
+}
+
+// end LINE-UP PAGE
+// ABOUT PAGE
+
+.box-4 {
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 50px 50px;
+  height: 2000px;
+  width: calc(100% - 5rem);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -1750px;
+  position: sticky;
+  z-index: 3;
+}
+
+.container-2 {
+  margin-top: 250px;
+}
+
+.container-2 img {
+  float: right;
+}
+
+.button-1 {
+  background-color: rgb(83, 173, 201);
+  top: 280px;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: center;
+  
+  z-index: 6;
+}
+
+.bg-about img {
+ display: none;
+}
+
+.button-1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container-2 img {
+  position: relative;
+  top: -240px;
+}
+.container-2 p {
+  position: relative;
+  top: 420px;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+  .heading-2 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    top: 10px;
+    color: #fff;
+  }
+  
+  
+  .container-1 p {
+    padding-top: 2rem;
+    color: #fff;
+  }
+
+  .bg-about img {
+    width: 96%;
+    display: block;
+    height:500px;
+    z-index: 4;
+    margin-left: 2rem;
+    position: relative;
+    top: -700px
+  }
+
+  .button {
+    box-shadow: 10px 10px 5px grey;
+    width: 250px;
+    margin-left: 36.5rem;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    z-index: 6;
+  }
+
+  .button-1 {
+    position: relative;
+    top:-100px;
+    width: 250px;
+    margin-left: 36.5rem;
+    margin-bottom: 10rem;
+  }
+
+  .button-1 a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .container-2 img {
+    position: relative;
+    top: 5px;
+    left: 90px
+  }
+
+  .container-2 p {
+    position: relative;
+    top: 20px;
+    left: 20px
+  }
+
+  .container-3 {
+    margin-left: 12rem;
+  }
+
+  .container-2 {
+    margin-top: 15px;
+    margin-left: 19.5rem;
+  }
+
+  .box-4 {
+    display: grid;
+    background-color: #f2f2f2;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    height: 1000px;
+    width: calc(100% - 5rem);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -1000px;
+    position: sticky;
+    z-index: 3;
+  }
+
+  .box-3 {
+    display: grid;
+    background-color: #f2f2f2;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    height: 1500px;
+    width: calc(100% - 5rem);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -1350px;
+    position: sticky;
+    z-index: 3;
+  }
+  
+
+  // start Contact
+
+  .heading-3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    top: -70px;
+    margin-left: -6rem;
+  }
+
+  .everything {
+    position: absolute;
+    top: 44rem;
+    width: 90%;
+    margin-left: 1rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    margin-left: 2rem;
+
+}
+
+input[type=submit] {
+  margin-left:1rem;
+  width: 93%;
+}
+
+   
+   
+   
+   /*size of the map - CONTACT*/
+   
+   .map-wrapper {
+       padding-top: 1rem;
+       position: relative;
+   
+   }
+
+      /*the labels just about the input boxs - CONTACT*/
+      label {
+        display: block;
+        padding: 0 0 .5rem 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+
+    }
+    /*the input tags - CONTACT*/
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        display: inline-block;
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+
+    /*    this keeps the map floating right and in place - CONTACT*/
+    .map-wrapper {
+        width: 49%;
+        float: right;
+        height: 295px;
+
+    }
+
+    /*this keep the form from taking up the whole screen - CONTACT*/
+    form {
+        width: 48%;
+        float: left;
+        border-right: 1px solid black;
+        padding-right: 1rem;
+    }
+    /*when fully extended it keeps everything contained in the center - CONTACT*/
+
+    .container-5 {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+// end contact
+
+  // home page
+  .box-1 nav ul li a {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin-left: 12rem;
+  }
+
+  li {
+    position: relative;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-align: center;
+  }
+
+  p {
+    width: 500px;
+    height: 200px;
+    float: left;
+    position: relative;
+    margin-left: 1rem;
+    z-index: 5;;
+  }
+
+h3 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 28px;
+  margin-top: 20rem;
+  padding-left: 6rem;
+}
+
+.container .item:nth-child(4),
+.container .item:nth-child(5),
+.container .item:nth-child(6),
+.container .item:nth-child(7),
+.container .item:nth-child(8),
+.container .item:nth-child(9) {
+  display: grid;
+}
+
+  .box {
+    display: grid;
+    background-color: #f2f2f2;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+    height: 1625px;
+    width: calc(100% - 5rem);
+    margin-right: auto;
+    margin-left: 2rem;
+    margin-top: -1850px;
+    position: sticky;
+    z-index: 3;
+  }
+  .container .item {
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding-left: 6rem;
+  }
+  .container .item img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
